@@ -32,13 +32,6 @@
           <li class="last"><a href="sims.html" class="m5">Simulations</a></li>
         </ul>
       </nav>
-      <form action="#" id="search-form">
-        <fieldset>
-          <div class="rowElem">
-            <input type="text">
-            <a href="#">Search</a></div>
-        </fieldset>
-      </form>
     </div>
   </header>
   <div class="container">
@@ -58,39 +51,35 @@
         <h2><span>PhysEd <span>for better future</span></span></h2>
       </div>
       <div class="inside">
-        <h2>Our <span>Contacts</span></h2>
-        <div class="address">
-          <address>
-          <strong>Zip Code:</strong>50122<br>
-          <strong>Country:</strong>USA<br>
-          <strong>Telephone:</strong>+354 5635600<br>
-          <strong>Fax:</strong>+354 5635610
+        <h2>About <span>Us</span></h2>
+        <div class="members">
+          <members>
+          <strong>1.</strong><h4>Jilow John</h4><br>
+          <strong>2.</strong><h4>Kshitij Khaladkar</h4><br>
+          <strong>3.</strong><h4>Rishabh Khosla</h4><br>
+          <strong>Roll Nos.</strong><h3>35, 36, 38</h3>
           </address>
           <div class="extra-wrap">
-            <h4>Miscellaneous info:</h4>
+            <h4>Project Info:</h4>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
           </div>
         </div>
-        <h2>Contact <span>Form</span></h2>
-        <form id="contacts-form" action="#">
+        <h2>Feedback <span>Form</span></h2>
+        <form id="contacts-form" method="POST" action="connectivity-feedback.php">
           <fieldset>
             <div class="field">
               <label>Your Name:</label>
-              <input type="text" value=""/>
+              <input type="text" value="" name="name" />
             </div>
             <div class="field">
               <label>Your E-mail:</label>
-              <input type="email" value=""/>
-            </div>
-            <div class="field">
-              <label>Your Website:</label>
-              <input type="text" value=""/>
+              <input type="email" value="" name="email" />
             </div>
             <div class="field extra">
               <label>Your Message:</label>
-              <textarea cols="1" rows="1"></textarea>
+              <textarea cols="1" rows="1" name="feed"></textarea>
             </div>
-            <div class="alignright"><a href="#">Send Your Message!</a></div>
+            <div class="aligncenter"><input id="button" type="submit" name="submit" value="Submit"</div>
           </fieldset>
         </form>
       </div>
