@@ -19,7 +19,7 @@ html, body {
 }
 .container {
 	margin:0 auto;
-	width:940px;
+	width:980px;
 	overflow:hidden;
 	font-size:.875em;
 	padding-bottom:176px;
@@ -305,7 +305,7 @@ header nav {
 }
 header nav ul li {
 	float:left;
-	font-size:16px;
+	font-size:14px;
 	line-height:1.2em;
 	text-transform:uppercase;
 	padding-right:1px;
@@ -329,25 +329,25 @@ header nav ul li.current a, header nav ul li a:hover {
 	color:#008cc4;
 }
 header nav ul li a.m1 {
-	width:186px;
+	width:150px;
 }
 header nav ul li.current a.m1 {
 	background-image:url(../images/m1-act.jpg);
 }
 header nav ul li a.m2 {
-	width:179px;
+	width:150px;
 }
 header nav ul li.current a.m2 {
 	background-image:url(../images/m2-act.jpg);
 }
 header nav ul li a.m3 {
-	width:208px;
+	width:150px;
 }
 header nav ul li.current a.m3 {
 	background-image:url(../images/m3-act.jpg);
 }
 header nav ul li a.m4 {
-	width:196px;
+	width:150px;
 }
 header nav ul li.current a.m4 {
 	background-image:url(../images/m4-act.jpg);
@@ -357,7 +357,7 @@ header nav ul li.last {
 	padding:0;
 }
 header nav ul li a.m5 {
-	width:167px;
+	width:150px;
 }
 header nav ul li.current a.m5 {
 	background-image:url(../images/m5-act.jpg);

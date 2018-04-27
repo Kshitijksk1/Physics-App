@@ -11,6 +11,80 @@
 <script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
 <script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<style>
+  header .nav-bg {
+  background:no-repeat center top;
+}
+header nav {
+  position:absolute;
+  left:0;
+  top:3px;
+}
+header nav ul li {
+  float:left;
+  font-size:14px;
+  line-height:1.2em;
+  text-transform:uppercase;
+  padding-right:1px;
+  background:url(../images/divider.gif) repeat-y right top;
+}
+header nav ul li.last {
+  background:none;
+  padding:0;
+}
+header nav ul li a {
+  color:#454545;
+  text-decoration:none;
+  display:block;
+  float:left;
+  text-align:center;
+  padding:18px 0 20px 0;
+  background-repeat:no-repeat;
+  background-position:left top;
+}
+header nav ul li.current a, header nav ul li a:hover {
+  color:#008cc4;
+}
+header nav ul li a.m1 {
+  width:130px;
+}
+header nav ul li.current a.m1 {
+  background-image:url(../images/m1-act.jpg);
+}
+header nav ul li a.m2 {
+  width:130px;
+}
+header nav ul li.current a.m2 {
+  background-image:url(../images/m2-act.jpg);
+}
+header nav ul li a.m3 {
+  width:130px;
+}
+header nav ul li.current a.m3 {
+  background-image:url(../images/m3-act.jpg);
+}
+header nav ul li a.m4 {
+  width:130px;
+}
+header nav ul li.current a.m4 {
+  background-image:url(../images/m4-act.jpg);
+}
+header nav ul li.last {
+  background:none;
+  padding:0;
+}
+header nav ul li a.m5 {
+  width:130px;
+}
+header nav ul li a.m6 {
+  width:100px;
+}
+header nav ul li.current a.m5 {
+  background-image:url(../images/m5-act.jpg);
+}
+
+
+</style>
 <!--[if lt IE 7]>
 <link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
 <script type="text/javascript" src="js/ie_png.js"></script>
@@ -25,11 +99,13 @@
     <div class="container">
             <nav>
         <ul>
-          <li class="current"><a href="index.html" class="m1">Home Page</a></li>
+          <li><a href="index.html" class="m1">Home Page</a></li>
           <li><a href="videos.html" class="m2">Videos</a></li>
           <li><a href="formulae.html" class="m3">Formulae</a></li>
-          <li><a href="contact-us.html" class="m4">Contact Us</a></li>
-          <li class="last"><a href="sims.html" class="m5">Simulations</a></li>
+          <li><a href="test.php" class="m3">Practice Tests</a></li>
+           <li><a href="sims.html" class="m4">Simulations</a></li>
+          <li><a href="contact-us.html" class="m5">Contact Us</a></li>
+          <li><a href="login.php" class="m6">Log in</a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +117,7 @@
           <div class="rowElem">
             <h2>Newsletter</h2>
             <input type="email" value="Enter Your Email Here" onFocus="if(this.value=='Enter Your Email Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your Email Here'}" >
-            <div class="clear"><a href="#" class="fleft">Unsubscribe</a><a href="#" class="fright">Submit</a></div>
+            <div class="clear"><a href="#" class="fright">Submit</a></div>
           </div>
         </fieldset>
       </form>

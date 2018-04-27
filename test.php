@@ -1,7 +1,12 @@
+<?php include 'config.php'; ?>
+<?php 
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Contact Us</title>
+<title>Practice Tests</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -82,6 +87,14 @@ header nav ul li a.m6 {
 header nav ul li.current a.m5 {
   background-image:url(../images/m5-act.jpg);
 }
+a.start{
+  display: inline-block;
+  color: #666;
+  background: #f4f4f4;
+  border: 1px dotted #ccc;
+  padding: 6px 13px;
+}
+
 
 
 </style>
@@ -92,12 +105,12 @@ header nav ul li.current a.m5 {
 <![endif]-->
 <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
 </head>
-<body id="page5">
+<body id="page3">
 <!-- START PAGE SOURCE -->
 <div class="wrap">
   <header>
     <div class="container">
-      <nav>
+            <nav>
         <ul>
           <li><a href="index.html" class="m1">Home Page</a></li>
           <li><a href="videos.html" class="m2">Videos</a></li>
@@ -124,40 +137,49 @@ header nav ul li.current a.m5 {
     </aside>
     <section id="content">
       <div id="banner">
-        <h2><span>PhysEd <span>for better future</span></span></h2>
+        <h2><span>PhysEd<span>for a brighter future</span></span></h2>
       </div>
-      <div class="inside">
-        <h2>About <span>Us</span></h2>
-        <div class="members">
-          <members>
-          <strong>1.</strong><h4>Jilow John - 35</h4><br>
-          <strong>2.</strong><h4>Kshitij Khaladkar - 36</h4><br>
-          <strong>3.</strong><h4>Rishabh Khosla - 38</h4><br>
-          </address>
-          <div class="extra-wrap">
-            <h4>Project Info:</h4>
-            <p>PhysED is a WebApp that can be used by students understand the concepts of Physics and can be use by Teachers to make their students understand the physics concepts using Videos and Simulatons. </p>
-          </div>
-        </div>
-        <h2>Feedback <span>Form</span></h2>
-        <form id="contacts-form" method="POST" action="connectivity-feedback.php">
-          <fieldset>
-            <div class="field">
-              <label>Your Name:</label>
-              <input type="text" value="" name="name" />
-            </div>
-            <div class="field">
-              <label>Your E-mail:</label>
-              <input type="email" value="" name="email" />
-            </div>
-            <div class="field extra">
-              <label>Your Message:</label>
-              <textarea cols="1" rows="1" name="feed"></textarea>
-            </div>
-            <div class="aligncenter"><input id="button" type="submit" name="submit" value="Submit"</div>
-          </fieldset>
-        </form>
-      </div>
+       <div class="inside">
+        <h2>Practice Tests</h2>
+        <p>We provide some practice tests that are MCQ based on various topics in Physics</p>
+        <div class = "inside">
+        <p><strong><h2>Projectile Motion</h2></strong></p>
+        <p>
+          Projectile motion is a form of motion experienced by an object or particle (a projectile) that is thrown near the Earth's surface and moves along a curved path under the action of gravity only
+        </p>
+        <ul>
+          <li><strong>Number of Questions:</strong> 10</li>
+          <li><strong>Type:</strong> Multiple Choice Questions</li>
+          <li><strong>Estimated Time:</strong> 30 minutes</li>
+        </ul>
+        <br>
+        <a href="questions.php?n=1" class="start"> Start Quiz</a>
+        <br>
+        <br>
+        <p><strong><h2>Oscillations</h2></strong></p>
+        <p>
+          Oscillation is the repetitive variation, typically in time, of some measure about a central value or between two or more different states. The term vibration is precisely used to describe mechanical oscillation.
+        </p>
+        <ul>
+          <li><strong>Number of Questions:</strong> 10</li>
+          <li><strong>Type:</strong> Multiple Choice Questions</li>
+          <li><strong>Estimated Time:</strong> 20 minutes</li>
+        </ul>
+        <br>
+        <a href="questions1.php?n=1" class="start"> Start Quiz</a>
+        <br>
+        <br>
+        <p><strong><h2>Wave Motion</h2></strong></p>
+        <p>
+           Wave motion, propagation of disturbances that is, deviations from a state of rest or equilibrium from place to place in a regular and organized way. Most familiar are surface waves on water, but both sound and light travel as wavelike disturbances, and the motion of all subatomic particles exhibits wavelike properties.
+        </p>
+        <ul>
+          <li><strong>Number of Questions:</strong> 10</li>
+          <li><strong>Type:</strong> Multiple Choice Questions</li>
+          <li><strong>Estimated Time:</strong> 25 minutes</li>
+        </ul>
+        <br>
+        <a href="questions2.php?n=1" class="start"> Start Quiz</a>
     </section>
   </div>
 </div>

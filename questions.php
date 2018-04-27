@@ -1,7 +1,19 @@
+<?php include 'config.php'; ?>
+<?php 
+    //set question number
+    $number = (int) $_GET['n'];
+    //get question
+    $query1 = "SELECT * FROM 'questions'
+             WHERE ques_number = $number"
+    //get result
+       $result1 = mysqli_query($con, $query1);
+      $question = mysqli_fetch_assoc($result1);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Contact Us</title>
+<title>Formulae</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -82,6 +94,14 @@ header nav ul li a.m6 {
 header nav ul li.current a.m5 {
   background-image:url(../images/m5-act.jpg);
 }
+a.start{
+  display: inline-block;
+  color: #666;
+  background: #f4f4f4;
+  border: 1px dotted #ccc;
+  padding: 6px 13px;
+}
+
 
 
 </style>
@@ -92,12 +112,12 @@ header nav ul li.current a.m5 {
 <![endif]-->
 <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
 </head>
-<body id="page5">
+<body id="page3">
 <!-- START PAGE SOURCE -->
 <div class="wrap">
   <header>
     <div class="container">
-      <nav>
+            <nav>
         <ul>
           <li><a href="index.html" class="m1">Home Page</a></li>
           <li><a href="videos.html" class="m2">Videos</a></li>
@@ -124,40 +144,16 @@ header nav ul li.current a.m5 {
     </aside>
     <section id="content">
       <div id="banner">
-        <h2><span>PhysEd <span>for better future</span></span></h2>
+        <h2><span>PhysEd<span>for a brighter future</span></span></h2>
       </div>
-      <div class="inside">
-        <h2>About <span>Us</span></h2>
-        <div class="members">
-          <members>
-          <strong>1.</strong><h4>Jilow John - 35</h4><br>
-          <strong>2.</strong><h4>Kshitij Khaladkar - 36</h4><br>
-          <strong>3.</strong><h4>Rishabh Khosla - 38</h4><br>
-          </address>
-          <div class="extra-wrap">
-            <h4>Project Info:</h4>
-            <p>PhysED is a WebApp that can be used by students understand the concepts of Physics and can be use by Teachers to make their students understand the physics concepts using Videos and Simulatons. </p>
-          </div>
-        </div>
-        <h2>Feedback <span>Form</span></h2>
-        <form id="contacts-form" method="POST" action="connectivity-feedback.php">
-          <fieldset>
-            <div class="field">
-              <label>Your Name:</label>
-              <input type="text" value="" name="name" />
-            </div>
-            <div class="field">
-              <label>Your E-mail:</label>
-              <input type="email" value="" name="email" />
-            </div>
-            <div class="field extra">
-              <label>Your Message:</label>
-              <textarea cols="1" rows="1" name="feed"></textarea>
-            </div>
-            <div class="aligncenter"><input id="button" type="submit" name="submit" value="Submit"</div>
-          </fieldset>
-        </form>
-      </div>
+       <main>
+         <div class="container">
+           <div class="current">Question 1 of 5</div>
+          <p class="question">
+            <?php echo $question['question']; ?>
+          </p>
+         </div>
+       </main>
     </section>
   </div>
 </div>

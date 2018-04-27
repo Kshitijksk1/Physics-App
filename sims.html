@@ -11,6 +11,80 @@
 <script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
 <script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<style>
+  header .nav-bg {
+  background:no-repeat center top;
+}
+header nav {
+  position:absolute;
+  left:0;
+  top:3px;
+}
+header nav ul li {
+  float:left;
+  font-size:14px;
+  line-height:1.2em;
+  text-transform:uppercase;
+  padding-right:1px;
+  background:url(../images/divider.gif) repeat-y right top;
+}
+header nav ul li.last {
+  background:none;
+  padding:0;
+}
+header nav ul li a {
+  color:#454545;
+  text-decoration:none;
+  display:block;
+  float:left;
+  text-align:center;
+  padding:18px 0 20px 0;
+  background-repeat:no-repeat;
+  background-position:left top;
+}
+header nav ul li.current a, header nav ul li a:hover {
+  color:#008cc4;
+}
+header nav ul li a.m1 {
+  width:130px;
+}
+header nav ul li.current a.m1 {
+  background-image:url(../images/m1-act.jpg);
+}
+header nav ul li a.m2 {
+  width:130px;
+}
+header nav ul li.current a.m2 {
+  background-image:url(../images/m2-act.jpg);
+}
+header nav ul li a.m3 {
+  width:130px;
+}
+header nav ul li.current a.m3 {
+  background-image:url(../images/m3-act.jpg);
+}
+header nav ul li a.m4 {
+  width:130px;
+}
+header nav ul li.current a.m4 {
+  background-image:url(../images/m4-act.jpg);
+}
+header nav ul li.last {
+  background:none;
+  padding:0;
+}
+header nav ul li a.m5 {
+  width:130px;
+}
+header nav ul li a.m6 {
+  width:100px;
+}
+header nav ul li.current a.m5 {
+  background-image:url(../images/m5-act.jpg);
+}
+
+
+</style>
 <!--[if lt IE 7]>
 <link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
 <script type="text/javascript" src="js/ie_png.js"></script>
@@ -25,20 +99,15 @@
     <div class="container">
             <nav>
         <ul>
-           <li class="current"><a href="index.html" class="m1">Home Page</a></li>
+          <li><a href="index.html" class="m1">Home Page</a></li>
           <li><a href="videos.html" class="m2">Videos</a></li>
           <li><a href="formulae.html" class="m3">Formulae</a></li>
-          <li><a href="contact-us.html" class="m4">Contact Us</a></li>
-          <li class="last"><a href="sims.html" class="m5">Simulations</a></li>
+          <li><a href="test.php" class="m3">Practice Tests</a></li>
+           <li><a href="sims.html" class="m4">Simulations</a></li>
+          <li><a href="contact-us.html" class="m5">Contact Us</a></li>
+          <li><a href="login.php" class="m6">Log in</a></li>
         </ul>
       </nav>
-      <form action="#" id="search-form">
-        <fieldset>
-          <div class="rowElem">
-            <input type="text">
-            <a href="#">Search</a></div>
-        </fieldset>
-      </form>
     </div>
   </header>
   <div class="container">
@@ -48,7 +117,7 @@
           <div class="rowElem">
             <h2>Newsletter</h2>
             <input type="email" value="Enter Your Email Here" onFocus="if(this.value=='Enter Your Email Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your Email Here'}" >
-            <div class="clear"><a href="#" class="fleft">Unsubscribe</a><a href="#" class="fright">Submit</a></div>
+            <div class="clear"><a href="#" class="fright">Submit</a></div>
           </div>
         </fieldset>
       </form>
@@ -61,20 +130,63 @@
       <div class="inside">
         <h2>Simulations</h2>
         <p>We provide a wide range of simulations on various topics in physics</p>
-        Kshtitj, add the simulations below
-        <ul class="sitemap">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Articles</a>
-            <ul>
-              <li><a href="article.html">Article 1</a></li>
-              <li><a href="#">Article 2</a></li>
-              <li><a href="#">Article 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Site Map</a></li>
-        </ul>
+
+<!--        <div style="width: 600px; height: 700px; overflow: hidden">
+        <iframe src="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html" height = "300" width = "300" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+      
+
+         <p>Current Electricity</p>
+                 <iframe src="https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire_en.html" height = "300" width = "300" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+
+        <p>Wave motion</p>
+                 <iframe src="https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_en.html" height = "300" width = "300" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+
+        <p>Fricton</p>
+                 <iframe src="https://phet.colorado.edu/sims/html/friction/latest/friction_en.html" height = "300" width = "300" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+
+        
+        </div>
+-->
+
+<div class = "inside">
+        <p><h2>Projectile Motion</h2></p>
+
+        <p>
+          Projectile motion is a form of motion experienced by an object or particle (a projectile) that is thrown near the Earth's surface and moves along a curved path under the action of gravity only
+        </p>
+                 <iframe src="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html" height = "300" width = "600" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+
+
+<p><h2>Wave Motion</h2></p>
+
+<p>
+  Wave motion, propagation of disturbances—that is, deviations from a state of rest or equilibrium—from place to place in a regular and organized way. Most familiar are surface waves on water, but both sound and light travel as wavelike disturbances, and the motion of all subatomic particles exhibits wavelike properties.
+</p>
+                 <iframe src="https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_en.html" height = "300" width = "600" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+
+<p><h2>Oscillations</h2></p>
+
+<p>
+  Oscillation is the repetitive variation, typically in time, of some measure about a central value or between two or more different states. The term vibration is precisely used to describe mechanical oscillation.
+</p>
+                 <iframe src="https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_en.html" height = "300" width = "600" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+
+<p><h2>Law of conservation of energy</h2></p>
+
+<p>
+  In physics, the law of Conservation of Energy states that the total energy of an isolated system remains constant, it is said to be conserved over time
+</p>
+                 <iframe src="https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_en.html" height = "300" width = "600" scrolling="no" style="position: relative; left: 0px; top: 0px"></iframe>
+        </iframe>
+</div>
+
       </div>
     </section>
   </div>
